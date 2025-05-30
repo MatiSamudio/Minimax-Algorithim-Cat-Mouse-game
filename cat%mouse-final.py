@@ -133,11 +133,11 @@ while game_running:
     if player == "C":
         board[cat_pos[0]][cat_pos[1]] = " " #elimina la posicion actual del gato
         cat_pos = best_move_cat(cat_pos, rat_pos, turns, depth=8)#busca la mejor poscision 
-        board[cat_pos[0]][cat_pos[1]] = "C" #actualiza la nueva posicion
+        board[cat_pos[0]][cat_pos[1]] = "G" #actualiza la nueva posicion
     else:
         board[rat_pos[0]][rat_pos[1]] = " " #elimina la posicion actual
         rat_pos = best_move_rat(cat_pos, rat_pos, turns, depth=8)#busca la mejor poscision 
-        board[rat_pos[0]][rat_pos[1]] = "M" #actualiza la nueva poscision
+        board[rat_pos[0]][rat_pos[1]] = "R" #actualiza la nueva poscision
 
     #agrega un turno por cada vuelta
     if player == "M":
