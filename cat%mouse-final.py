@@ -127,7 +127,7 @@ def best_move_cat(cat_pos, rat_pos, turns, depth): # la funcion encargada de uti
 while game_running:
     print(f"El gato (G) tiene que atrapar al raton (R) antes que llegue a la cantidad maxima de turnos ({max_turns})")
     print_board(board)
-    print(f"Turno de del jugador : {'Gato (C)' if player == 'C' else 'Ratón (M)'}")
+    print(f"Turno de del jugador : {'Gato (G)' if player == 'G' else 'Ratón (R)'}")
 
 
     if player == "C":
@@ -156,4 +156,4 @@ while game_running:
         print("¡El ratón ha escapado!")
         break
         #cambia de jugador 
-    player = "M" if player == "C" else "C"
+    player = "R" if player == "G" else "G"
