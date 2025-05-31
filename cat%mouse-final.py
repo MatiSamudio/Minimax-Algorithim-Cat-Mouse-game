@@ -140,7 +140,7 @@ while game_running:
         board[rat_pos[0]][rat_pos[1]] = "R" #actualiza la nueva poscision
 
     #agrega un turno por cada vuelta
-    if player == "M":
+    if player == "R":
         turns += 1
 
 
